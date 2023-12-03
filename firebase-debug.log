@@ -1,0 +1,134 @@
+[debug] [2023-09-06T13:39:04.012Z] ----------------------------------------------------------------------
+[debug] [2023-09-06T13:39:04.018Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lewis Wachira\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-06T13:39:04.020Z] CLI Version:   12.5.2
+[debug] [2023-09-06T13:39:04.021Z] Platform:      win32
+[debug] [2023-09-06T13:39:04.021Z] Node Version:  v18.16.0
+[debug] [2023-09-06T13:39:04.026Z] Time:          Wed Sep 06 2023 16:39:04 GMT+0300 (East Africa Time)
+[debug] [2023-09-06T13:39:04.026Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-06T13:39:04.040Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-09-06T13:39:04.182Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-06T13:39:04.183Z] > authorizing via signed-in user (lewiswachira996@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lewis Wachira\Fullstack_Food_App
+
+[debug] [2023-09-06T13:39:04.835Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-09-06T13:39:04.837Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-06T13:43:02.275Z] > refreshing access token with scopes: []
+[debug] [2023-09-06T13:43:02.278Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-09-06T13:43:02.278Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-06T13:43:02.643Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-09-06T13:43:02.644Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-09-06T13:43:02.667Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-06T13:43:03.436Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-09-06T13:43:03.437Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project snack-shark-restaurant-app (Snack Shark Restaurant App) 
+[info] 
+=== Functions Setup
+[debug] [2023-09-06T13:43:06.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-06T13:43:06.756Z] > authorizing via signed-in user (lewiswachira996@gmail.com)
+[debug] [2023-09-06T13:43:06.756Z] [iam] checking project snack-shark-restaurant-app for permissions ["firebase.projects.get"]
+[debug] [2023-09-06T13:43:06.758Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions [none]
+[debug] [2023-09-06T13:43:06.758Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions x-goog-quota-user=projects/snack-shark-restaurant-app
+[debug] [2023-09-06T13:43:06.758Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-06T13:43:08.386Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions 200
+[debug] [2023-09-06T13:43:08.387Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-06T13:43:08.388Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-09-06T13:43:08.388Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/snack-shark-restaurant-app
+[debug] [2023-09-06T13:43:08.391Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-09-06T13:43:08.392Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/snack-shark-restaurant-app
+[debug] [2023-09-06T13:43:10.227Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/runtimeconfig.googleapis.com 200
+[debug] [2023-09-06T13:43:10.228Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-09-06T13:43:10.282Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/cloudfunctions.googleapis.com 200
+[debug] [2023-09-06T13:43:10.282Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[debug] [2023-09-06T13:51:31.338Z] ----------------------------------------------------------------------
+[debug] [2023-09-06T13:51:31.349Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lewis Wachira\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-06T13:51:31.350Z] CLI Version:   12.5.2
+[debug] [2023-09-06T13:51:31.351Z] Platform:      win32
+[debug] [2023-09-06T13:51:31.352Z] Node Version:  v18.16.0
+[debug] [2023-09-06T13:51:31.355Z] Time:          Wed Sep 06 2023 16:51:31 GMT+0300 (East Africa Time)
+[debug] [2023-09-06T13:51:31.356Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-06T13:51:31.395Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-06T13:51:31.396Z] > authorizing via signed-in user (lewiswachira996@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lewis Wachira\Fullstack_Food_App
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-06T13:52:20.675Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-06T13:52:21.706Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-09-06T13:52:21.707Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project snack-shark-restaurant-app (Snack Shark Restaurant App) 
+[info] 
+=== Functions Setup
+[debug] [2023-09-06T13:52:24.684Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-06T13:52:24.685Z] > authorizing via signed-in user (lewiswachira996@gmail.com)
+[debug] [2023-09-06T13:52:24.685Z] [iam] checking project snack-shark-restaurant-app for permissions ["firebase.projects.get"]
+[debug] [2023-09-06T13:52:24.688Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions [none]
+[debug] [2023-09-06T13:52:24.691Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions x-goog-quota-user=projects/snack-shark-restaurant-app
+[debug] [2023-09-06T13:52:24.691Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-06T13:52:26.195Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions 200
+[debug] [2023-09-06T13:52:26.196Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/snack-shark-restaurant-app:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-06T13:52:26.197Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-09-06T13:52:26.197Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/snack-shark-restaurant-app
+[debug] [2023-09-06T13:52:26.199Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-09-06T13:52:26.199Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/snack-shark-restaurant-app
+[debug] [2023-09-06T13:52:28.061Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/runtimeconfig.googleapis.com 200
+[debug] [2023-09-06T13:52:28.061Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-09-06T13:52:28.064Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/cloudfunctions.googleapis.com 200
+[debug] [2023-09-06T13:52:28.064Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/snack-shark-restaurant-app/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
